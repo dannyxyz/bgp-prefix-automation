@@ -1,0 +1,28 @@
+# Router BGP Prefix List Configuration
+# Each entry represents a router and its associated prefix policies
+
+routers:
+  - hostname: abv02-r01
+    ip: 154.66.247.33
+    policies:
+      - name: "WIOCC-ROUTES"
+        as_set: "AS37439"
+        description: "WIOCC Core Routes"
+        max_prefix_length: 24
+        rir: "AFRINIC"
+        
+      - name: "RSAWEB_routes"
+        as_set: "AS37053:AS-37053"
+        description: "RSAWEB routes"
+        max_prefix_length: 24
+        rir: "AFRINIC"
+
+  
+
+# Global settings
+global:
+  default_rir: "AFRINIC"
+  default_max_prefix_length: 24
+  log_level: "INFO"
+  output_directory: "generated_configs"
+

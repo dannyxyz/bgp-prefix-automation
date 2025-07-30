@@ -1,0 +1,1618 @@
+2025-07-28 11:18:21,725 - __main__ - INFO - Using configuration file: configs/prefix_policies.yaml
+2025-07-28 11:18:21,726 - __main__ - INFO - Processing router: abv02-r01 (154.66.247.33)
+2025-07-28 11:18:21,727 - __main__ - INFO -   Generating policy: WIOCC-ROUTES for AS37439
+2025-07-28 11:18:21,728 - __main__ - INFO - Running command: bgpq4 -S AFRINIC -AJEl WIOCC-ROUTES AS37439 -R 24 -M protocol bgp
+2025-07-28 11:18:49,492 - __main__ - INFO - Using configuration file: configs/prefix_policies.yaml
+2025-07-28 11:18:49,494 - __main__ - INFO - Processing router: abv02-r01 (154.66.247.33)
+2025-07-28 11:18:49,494 - __main__ - INFO -   Generating policy: WIOCC-ROUTES for AS37439
+2025-07-28 11:18:49,495 - __main__ - INFO - Running command: bgpq4 -S AFRINIC -AJEl WIOCC-ROUTES AS37439 -R 24 -M protocol bgp
+2025-07-28 11:33:34,543 - __main__ - INFO - Using configuration file: configs/prefix_policies.yaml
+2025-07-28 11:33:34,544 - __main__ - INFO - Processing router: abv02-r01 (154.66.247.33)
+2025-07-28 11:33:34,545 - __main__ - INFO -   Generating policy: WIOCC-ROUTES for AS37439
+2025-07-28 11:33:34,545 - __main__ - INFO - Running command: bgpq4 -S AFRINIC -AJEl WIOCC-ROUTES AS37439 -R 24 -M protocol bgp
+2025-07-28 11:52:18,528 - __main__ - INFO - Using configuration file: configs/prefix_policies.yaml
+2025-07-28 11:52:18,529 - __main__ - INFO - Processing router: abv02-r01 (154.66.247.33)
+2025-07-28 11:52:18,530 - __main__ - INFO -   Generating policy: WIOCC-ROUTES for AS37439
+2025-07-28 11:52:18,530 - __main__ - INFO - Running command: bgpq4 -S AFRINIC -AJel WIOCC-ROUTES AS37439 -R 24 -M protocol bgp
+2025-07-28 11:52:18,890 - __main__ - ERROR - bgpq4 command failed: -b (BIRD), -B (OpenBGPD), -F (formatted), -J (Junos), -j (JSON), -N (Nokia SR OS Classic), -n (Nokia SR OS MD-CLI), -U (Huawei), -e (Arista) and -X (IOS XR) options are mutually exclusive
+
+2025-07-28 11:52:18,892 - __main__ - ERROR - Failed to generate prefix list for WIOCC-ROUTES
+2025-07-28 11:52:18,893 - __main__ - INFO -   Generating policy: Hoop-telecoms-routes for AS12345
+2025-07-28 11:52:18,893 - __main__ - INFO - Running command: bgpq4 -S AFRINIC -AJel Hoop-telecoms-routes AS12345 -R 24 -M protocol bgp
+2025-07-28 11:52:19,165 - __main__ - ERROR - bgpq4 command failed: -b (BIRD), -B (OpenBGPD), -F (formatted), -J (Junos), -j (JSON), -N (Nokia SR OS Classic), -n (Nokia SR OS MD-CLI), -U (Huawei), -e (Arista) and -X (IOS XR) options are mutually exclusive
+
+2025-07-28 11:52:19,167 - __main__ - ERROR - Failed to generate prefix list for Hoop-telecoms-routes
+2025-07-28 11:52:19,168 - __main__ - INFO - Configuration generation complete!
+2025-07-28 11:52:19,168 - __main__ - INFO - To apply these configurations, run with the '--apply' flag.
+2025-07-28 12:29:32,642 - __main__ - INFO - Using configuration file: configs/prefix_policies.yaml
+2025-07-28 12:29:32,643 - __main__ - INFO - Processing router: abv02-r01 (154.66.247.33)
+2025-07-28 12:29:32,644 - __main__ - INFO -   Generating policy: WIOCC-ROUTES for AS37439
+2025-07-28 12:29:32,644 - __main__ - INFO - Running command: bgpq4 -S AFRINIC -A -J -E -l WIOCC-ROUTES/route-set1 AS37439 -R 24 -M protocol bgp
+2025-07-28 12:29:33,690 - __main__ - INFO -     Configuration written to: configs/generated/abv02-r01_WIOCC-ROUTES_20250728_122932.conf
+2025-07-28 12:29:33,692 - __main__ - INFO -   Generating policy: Hoop-telecoms-routes for AS12345
+2025-07-28 12:29:33,692 - __main__ - INFO - Running command: bgpq4 -S AFRINIC -A -J -E -l Hoop-telecoms-routes/route-set1 AS12345 -R 24 -M protocol bgp
+2025-07-28 12:29:34,485 - __main__ - INFO -     Configuration written to: configs/generated/abv02-r01_Hoop-telecoms-routes_20250728_122932.conf
+2025-07-28 12:29:34,486 - __main__ - INFO - Configuration generation complete!
+2025-07-28 12:29:34,486 - __main__ - INFO - To apply these configurations, run with the '--apply' flag.
+2025-07-28 16:25:33,353 - __main__ - INFO - Using configuration file: configs/prefix_policies.yaml
+2025-07-28 16:25:33,354 - __main__ - INFO - Processing router: abv02-r01 (154.66.247.33)
+2025-07-28 16:25:53,284 - juniper_configurator - INFO - Connecting to 154.66.247.33...
+2025-07-28 16:25:53,529 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_7.5)
+2025-07-28 16:25:54,456 - paramiko.transport - INFO - Auth banner: b'\nUNAUTHORISED ACCESS IS STRICTLY PROHIBITED AND WILL BE PROSECUTED BY LAW. \n\nWIOCC Telecom Network Operations Centre \nPhone:  +44 (0)7712 881 590, Email: noc@wiocc.com \n\n'
+2025-07-28 16:25:54,456 - paramiko.transport - INFO - Authentication (password) successful!
+2025-07-28 16:25:55,833 - juniper_configurator - INFO - Successfully connected to 154.66.247.33
+2025-07-28 16:25:55,833 - __main__ - INFO -   Generating policy: WIOCC-ROUTES for AS37439
+2025-07-28 16:25:55,834 - __main__ - INFO - Running command: bgpq4 -S AFRINIC -A -J -E -l WIOCC-ROUTES/route-set1 AS37439 -R 24 -M protocol bgp
+2025-07-28 16:25:56,743 - __main__ - INFO -     Configuration written to: configs/generated/abv02-r01_WIOCC-ROUTES_20250728_162533.conf
+2025-07-28 16:25:56,744 - __main__ - INFO - 
+Applying configuration to abv02-r01...
+2025-07-28 16:26:25,361 - juniper_configurator - ERROR - Commit failed: # BGP Prefix List for WIOCC-ROUTES (AS37439)
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from protocol bgp 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from route-filter 154.66.192.0/22 upto /24 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from route-filter 165.73.160.0/19 upto /24 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from route-filter 197.157.220.0/22 upto /24 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from route-filter 213.172.128.0/19 upto /24 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 then next policy 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term reject then reject 
+
+[edit]
+danielf@re0.abv02-r01# exit configuration-mode 
+The configuration has been changed but not committed
+Exiting configuration mode
+
+danielf@re0.abv02-r01> commit
+                       ^
+unknown command.
+
+danielf@re0.abv02-r01> commit   confirmed
+                       ^
+unknown command.
+
+danielf@re0.abv02-r01> commitconfirmed   10
+                       ^
+unknown command.
+
+2025-07-28 16:26:29,568 - __main__ - ERROR - Failed to apply configuration: # BGP Prefix List for WIOCC-ROUTES (AS37439)
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from protocol bgp 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from route-filter 154.66.192.0/22 upto /24 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from route-filter 165.73.160.0/19 upto /24 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from route-filter 197.157.220.0/22 upto /24 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from route-filter 213.172.128.0/19 upto /24 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 then next policy 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term reject then reject 
+
+[edit]
+danielf@re0.abv02-r01# exit configuration-mode 
+The configuration has been changed but not committed
+Exiting configuration mode
+
+danielf@re0.abv02-r01> commit
+                       ^
+unknown command.
+
+danielf@re0.abv02-r01> commit   confirmed
+                       ^
+unknown command.
+
+danielf@re0.abv02-r01> commitconfirmed   10
+                       ^
+unknown command.
+
+2025-07-28 16:26:29,569 - __main__ - INFO -   Generating policy: Hoop-telecoms-routes for AS12345
+2025-07-28 16:26:29,569 - __main__ - INFO - Running command: bgpq4 -S AFRINIC -A -J -E -l Hoop-telecoms-routes/route-set1 AS12345 -R 24 -M protocol bgp
+2025-07-28 16:26:30,542 - __main__ - INFO -     Configuration written to: configs/generated/abv02-r01_Hoop-telecoms-routes_20250728_162533.conf
+2025-07-28 16:26:30,543 - __main__ - INFO - 
+Applying configuration to abv02-r01...
+2025-07-28 16:27:00,582 - juniper_configurator - ERROR - Commit failed: # BGP Prefix List for Hoop-telecoms-routes (AS12345)
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement Hoop-telecoms-routes term route-set1 from protocol bgp 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement Hoop-telecoms-routes term route-set1 then next policy 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement Hoop-telecoms-routes term reject then reject 
+
+[edit]
+danielf@re0.abv02-r01# exit configuration-mode 
+The configuration has been changed but not committed
+Exiting configuration mode
+
+danielf@re0.abv02-r01> commit
+                       ^
+unknown command.
+
+danielf@re0.abv02-r01> commit   confirmed
+                       ^
+unknown command.
+
+danielf@re0.abv02-r01> commitconfirmed   10
+                       ^
+unknown command.
+
+2025-07-28 16:27:04,788 - __main__ - ERROR - Failed to apply configuration: # BGP Prefix List for Hoop-telecoms-routes (AS12345)
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement Hoop-telecoms-routes term route-set1 from protocol bgp 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement Hoop-telecoms-routes term route-set1 then next policy 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement Hoop-telecoms-routes term reject then reject 
+
+[edit]
+danielf@re0.abv02-r01# exit configuration-mode 
+The configuration has been changed but not committed
+Exiting configuration mode
+
+danielf@re0.abv02-r01> commit
+                       ^
+unknown command.
+
+danielf@re0.abv02-r01> commit   confirmed
+                       ^
+unknown command.
+
+danielf@re0.abv02-r01> commitconfirmed   10
+                       ^
+unknown command.
+
+2025-07-28 16:27:04,790 - juniper_configurator - INFO - Disconnected from 154.66.247.33
+2025-07-28 16:27:04,790 - __main__ - INFO - 
+Configuration application summary:
+2025-07-28 16:27:04,791 - __main__ - INFO -   - Total policies: 2
+2025-07-28 16:27:04,791 - __main__ - INFO -   - Successfully applied: 0
+2025-07-28 16:27:04,791 - __main__ - INFO -   - Failed: 2
+2025-07-28 16:27:04,791 - __main__ - WARNING - Some configurations failed to apply. Check the logs for details.
+2025-07-28 16:27:04,792 - __main__ - INFO - 
+IMPORTANT: Remember to commit the changes within the rollback window
+2025-07-28 16:27:04,792 - __main__ - INFO - to make them permanent. Use '--commit <router_ip>' to commit.
+2025-07-28 18:34:44,454 - __main__ - INFO - Using configuration file: configs/prefix_policies.yaml
+2025-07-28 18:34:44,455 - __main__ - INFO - Processing router: abv02-r01 (154.66.247.33)
+2025-07-28 18:34:58,161 - juniper_configurator - INFO - Connecting to 154.66.247.33...
+2025-07-28 18:34:58,396 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_7.5)
+2025-07-28 18:34:59,314 - paramiko.transport - INFO - Auth banner: b'\nUNAUTHORISED ACCESS IS STRICTLY PROHIBITED AND WILL BE PROSECUTED BY LAW. \n\nWIOCC Telecom Network Operations Centre \nPhone:  +44 (0)7712 881 590, Email: noc@wiocc.com \n\n'
+2025-07-28 18:34:59,314 - paramiko.transport - INFO - Authentication (password) successful!
+2025-07-28 18:35:00,693 - juniper_configurator - INFO - Successfully connected to 154.66.247.33
+2025-07-28 18:35:00,693 - __main__ - INFO -   Generating policy: WIOCC-ROUTES for AS37439
+2025-07-28 18:35:00,694 - __main__ - INFO - Running command: bgpq4 -S AFRINIC -A -J -E -l WIOCC-ROUTES/route-set1 AS37439 -R 24 -M protocol bgp
+2025-07-28 18:35:01,834 - __main__ - INFO -     Configuration written to: configs/generated/abv02-r01_WIOCC-ROUTES_20250728_183444.conf
+2025-07-28 18:35:01,835 - __main__ - INFO - 
+Applying configuration to abv02-r01...
+2025-07-28 18:35:30,440 - juniper_configurator - ERROR - Commit failed: # BGP Prefix List for WIOCC-ROUTES (AS37439)
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from protocol bgp 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from route-filter 154.66.192.0/22 upto /24 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from route-filter 165.73.160.0/19 upto /24 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from route-filter 197.157.220.0/22 upto /24 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from route-filter 213.172.128.0/19 upto /24 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 then next policy 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term reject then reject 
+
+[edit]
+danielf@re0.abv02-r01# exit configuration-mode 
+The configuration has been changed but not committed
+Exiting configuration mode
+
+danielf@re0.abv02-r01> commit
+                       ^
+unknown command.
+
+danielf@re0.abv02-r01> commit   confirmed
+                       ^
+unknown command.
+
+danielf@re0.abv02-r01> commitconfirmed   10
+                       ^
+unknown command.
+
+2025-07-28 18:35:34,647 - __main__ - ERROR - Failed to apply configuration: # BGP Prefix List for WIOCC-ROUTES (AS37439)
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from protocol bgp 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from route-filter 154.66.192.0/22 upto /24 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from route-filter 165.73.160.0/19 upto /24 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from route-filter 197.157.220.0/22 upto /24 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from route-filter 213.172.128.0/19 upto /24 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 then next policy 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term reject then reject 
+
+[edit]
+danielf@re0.abv02-r01# exit configuration-mode 
+The configuration has been changed but not committed
+Exiting configuration mode
+
+danielf@re0.abv02-r01> commit
+                       ^
+unknown command.
+
+danielf@re0.abv02-r01> commit   confirmed
+                       ^
+unknown command.
+
+danielf@re0.abv02-r01> commitconfirmed   10
+                       ^
+unknown command.
+
+2025-07-28 18:35:34,648 - __main__ - INFO -   Generating policy: Hoop-telecoms-routes for AS12345
+2025-07-28 18:35:34,649 - __main__ - INFO - Running command: bgpq4 -S AFRINIC -A -J -E -l Hoop-telecoms-routes/route-set1 AS12345 -R 24 -M protocol bgp
+2025-07-28 18:35:35,748 - __main__ - INFO -     Configuration written to: configs/generated/abv02-r01_Hoop-telecoms-routes_20250728_183444.conf
+2025-07-28 18:35:35,749 - __main__ - INFO - 
+Applying configuration to abv02-r01...
+2025-07-28 18:36:05,782 - juniper_configurator - ERROR - Commit failed: # BGP Prefix List for Hoop-telecoms-routes (AS12345)
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement Hoop-telecoms-routes term route-set1 from protocol bgp 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement Hoop-telecoms-routes term route-set1 then next policy 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement Hoop-telecoms-routes term reject then reject 
+
+[edit]
+danielf@re0.abv02-r01# exit configuration-mode 
+The configuration has been changed but not committed
+Exiting configuration mode
+
+danielf@re0.abv02-r01> commit
+                       ^
+unknown command.
+
+danielf@re0.abv02-r01> commit   confirmed
+                       ^
+unknown command.
+
+danielf@re0.abv02-r01> commitconfirmed   10
+                       ^
+unknown command.
+
+2025-07-28 18:36:09,987 - __main__ - ERROR - Failed to apply configuration: # BGP Prefix List for Hoop-telecoms-routes (AS12345)
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement Hoop-telecoms-routes term route-set1 from protocol bgp 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement Hoop-telecoms-routes term route-set1 then next policy 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement Hoop-telecoms-routes term reject then reject 
+
+[edit]
+danielf@re0.abv02-r01# exit configuration-mode 
+The configuration has been changed but not committed
+Exiting configuration mode
+
+danielf@re0.abv02-r01> commit
+                       ^
+unknown command.
+
+danielf@re0.abv02-r01> commit   confirmed
+                       ^
+unknown command.
+
+danielf@re0.abv02-r01> commitconfirmed   10
+                       ^
+unknown command.
+
+2025-07-28 18:36:09,988 - juniper_configurator - INFO - Disconnected from 154.66.247.33
+2025-07-28 18:36:09,988 - __main__ - INFO - 
+Configuration application summary:
+2025-07-28 18:36:09,988 - __main__ - INFO -   - Total policies: 2
+2025-07-28 18:36:09,988 - __main__ - INFO -   - Successfully applied: 0
+2025-07-28 18:36:09,988 - __main__ - INFO -   - Failed: 2
+2025-07-28 18:36:09,988 - __main__ - WARNING - Some configurations failed to apply. Check the logs for details.
+2025-07-28 18:36:09,989 - __main__ - INFO - 
+IMPORTANT: Remember to commit the changes within the rollback window
+2025-07-28 18:36:09,989 - __main__ - INFO - to make them permanent. Use '--commit <router_ip>' to commit.
+2025-07-28 18:38:55,595 - __main__ - INFO - Using configuration file: configs/prefix_policies.yaml
+2025-07-28 18:38:55,596 - __main__ - INFO - Processing router: abv02-r01 (154.66.247.33)
+2025-07-28 18:39:06,893 - juniper_configurator - INFO - Connecting to 154.66.247.33...
+2025-07-28 18:39:07,129 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_7.5)
+2025-07-28 18:39:08,039 - paramiko.transport - INFO - Auth banner: b'\nUNAUTHORISED ACCESS IS STRICTLY PROHIBITED AND WILL BE PROSECUTED BY LAW. \n\nWIOCC Telecom Network Operations Centre \nPhone:  +44 (0)7712 881 590, Email: noc@wiocc.com \n\n'
+2025-07-28 18:39:08,039 - paramiko.transport - INFO - Authentication (password) successful!
+2025-07-28 18:39:09,422 - juniper_configurator - INFO - Successfully connected to 154.66.247.33
+2025-07-28 18:39:09,423 - __main__ - INFO -   Generating policy: WIOCC-ROUTES for AS37439
+2025-07-28 18:39:09,423 - __main__ - INFO - Running command: bgpq4 -S AFRINIC -A -J -E -l WIOCC-ROUTES/route-set1 AS37439 -R 24 -M protocol bgp
+2025-07-28 18:39:10,437 - __main__ - INFO -     Configuration written to: configs/generated/abv02-r01_WIOCC-ROUTES_20250728_183855.conf
+2025-07-28 18:39:10,437 - __main__ - INFO - 
+Applying configuration to abv02-r01...
+2025-07-28 18:39:39,073 - juniper_configurator - ERROR - Commit failed: # BGP Prefix List for WIOCC-ROUTES (AS37439)
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from protocol bgp 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from route-filter 154.66.192.0/22 upto /24 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from route-filter 165.73.160.0/19 upto /24 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from route-filter 197.157.220.0/22 upto /24 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from route-filter 213.172.128.0/19 upto /24 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 then next policy 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term reject then reject 
+
+[edit]
+danielf@re0.abv02-r01# exit configuration-mode 
+The configuration has been changed but not committed
+Exiting configuration mode
+
+danielf@re0.abv02-r01> commit
+                       ^
+unknown command.
+
+danielf@re0.abv02-r01> commit   confirmed
+                       ^
+unknown command.
+
+danielf@re0.abv02-r01> commitconfirmed   10
+                       ^
+unknown command.
+
+2025-07-28 18:39:43,280 - __main__ - ERROR - Failed to apply configuration: # BGP Prefix List for WIOCC-ROUTES (AS37439)
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from protocol bgp 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from route-filter 154.66.192.0/22 upto /24 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from route-filter 165.73.160.0/19 upto /24 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from route-filter 197.157.220.0/22 upto /24 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from route-filter 213.172.128.0/19 upto /24 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 then next policy 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term reject then reject 
+
+[edit]
+danielf@re0.abv02-r01# exit configuration-mode 
+The configuration has been changed but not committed
+Exiting configuration mode
+
+danielf@re0.abv02-r01> commit
+                       ^
+unknown command.
+
+danielf@re0.abv02-r01> commit   confirmed
+                       ^
+unknown command.
+
+danielf@re0.abv02-r01> commitconfirmed   10
+                       ^
+unknown command.
+
+2025-07-28 18:39:43,280 - __main__ - INFO -   Generating policy: Hoop-telecoms-routes for AS12345
+2025-07-28 18:39:43,281 - __main__ - INFO - Running command: bgpq4 -S AFRINIC -A -J -E -l Hoop-telecoms-routes/route-set1 AS12345 -R 24 -M protocol bgp
+2025-07-28 18:39:44,088 - __main__ - INFO -     Configuration written to: configs/generated/abv02-r01_Hoop-telecoms-routes_20250728_183855.conf
+2025-07-28 18:39:44,089 - __main__ - INFO - 
+Applying configuration to abv02-r01...
+2025-07-28 18:40:14,128 - juniper_configurator - ERROR - Commit failed: # BGP Prefix List for Hoop-telecoms-routes (AS12345)
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement Hoop-telecoms-routes term route-set1 from protocol bgp 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement Hoop-telecoms-routes term route-set1 then next policy 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement Hoop-telecoms-routes term reject then reject 
+
+[edit]
+danielf@re0.abv02-r01# exit configuration-mode 
+The configuration has been changed but not committed
+Exiting configuration mode
+
+danielf@re0.abv02-r01> commit
+                       ^
+unknown command.
+
+danielf@re0.abv02-r01> commit   confirmed
+                       ^
+unknown command.
+
+danielf@re0.abv02-r01> commitconfirmed   10
+                       ^
+unknown command.
+
+2025-07-28 18:40:18,334 - __main__ - ERROR - Failed to apply configuration: # BGP Prefix List for Hoop-telecoms-routes (AS12345)
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement Hoop-telecoms-routes term route-set1 from protocol bgp 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement Hoop-telecoms-routes term route-set1 then next policy 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement Hoop-telecoms-routes term reject then reject 
+
+[edit]
+danielf@re0.abv02-r01# exit configuration-mode 
+The configuration has been changed but not committed
+Exiting configuration mode
+
+danielf@re0.abv02-r01> commit
+                       ^
+unknown command.
+
+danielf@re0.abv02-r01> commit   confirmed
+                       ^
+unknown command.
+
+danielf@re0.abv02-r01> commitconfirmed   10
+                       ^
+unknown command.
+
+2025-07-28 18:40:18,336 - juniper_configurator - INFO - Disconnected from 154.66.247.33
+2025-07-28 18:40:18,336 - __main__ - INFO - 
+Configuration application summary:
+2025-07-28 18:40:18,337 - __main__ - INFO -   - Total policies: 2
+2025-07-28 18:40:18,337 - __main__ - INFO -   - Successfully applied: 0
+2025-07-28 18:40:18,337 - __main__ - INFO -   - Failed: 2
+2025-07-28 18:40:18,338 - __main__ - WARNING - Some configurations failed to apply. Check the logs for details.
+2025-07-28 18:40:18,338 - __main__ - INFO - 
+IMPORTANT: Remember to commit the changes within the rollback window
+2025-07-28 18:40:18,338 - __main__ - INFO - to make them permanent. Use '--commit <router_ip>' to commit.
+2025-07-28 18:50:16,114 - __main__ - INFO - Using configuration file: configs/prefix_policies.yaml
+2025-07-28 18:50:16,115 - __main__ - INFO - Processing router: abv02-r01 (154.66.247.33)
+2025-07-28 18:50:30,049 - juniper_configurator - INFO - Connecting to 154.66.247.33...
+2025-07-28 18:50:30,294 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_7.5)
+2025-07-28 18:50:31,232 - paramiko.transport - INFO - Auth banner: b'\nUNAUTHORISED ACCESS IS STRICTLY PROHIBITED AND WILL BE PROSECUTED BY LAW. \n\nWIOCC Telecom Network Operations Centre \nPhone:  +44 (0)7712 881 590, Email: noc@wiocc.com \n\n'
+2025-07-28 18:50:31,233 - paramiko.transport - INFO - Authentication (password) successful!
+2025-07-28 18:50:32,632 - juniper_configurator - INFO - Successfully connected to 154.66.247.33
+2025-07-28 18:50:32,632 - __main__ - INFO -   Generating policy: WIOCC-ROUTES for AS37439
+2025-07-28 18:50:32,633 - __main__ - INFO - Running command: bgpq4 -S AFRINIC -A -J -E -l WIOCC-ROUTES/route-set1 AS37439 -R 24 -M protocol bgp
+2025-07-28 18:50:33,526 - __main__ - INFO -     Configuration written to: configs/generated/abv02-r01_WIOCC-ROUTES_20250728_185016.conf
+2025-07-28 18:50:33,528 - __main__ - INFO - 
+Applying configuration to abv02-r01...
+2025-07-28 18:51:02,187 - juniper_configurator - ERROR - Commit failed: # BGP Prefix List for WIOCC-ROUTES (AS37439)
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from protocol bgp 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from route-filter 154.66.192.0/22 upto /24 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from route-filter 165.73.160.0/19 upto /24 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from route-filter 197.157.220.0/22 upto /24 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from route-filter 213.172.128.0/19 upto /24 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 then next policy 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term reject then reject 
+
+[edit]
+danielf@re0.abv02-r01# exit configuration-mode 
+The configuration has been changed but not committed
+Exiting configuration mode
+
+danielf@re0.abv02-r01> commit
+                       ^
+unknown command.
+
+danielf@re0.abv02-r01> commit   confirmed
+                       ^
+unknown command.
+
+danielf@re0.abv02-r01> commitconfirmed   10
+                       ^
+unknown command.
+
+2025-07-28 18:51:06,394 - __main__ - ERROR - Failed to apply configuration: # BGP Prefix List for WIOCC-ROUTES (AS37439)
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from protocol bgp 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from route-filter 154.66.192.0/22 upto /24 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from route-filter 165.73.160.0/19 upto /24 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from route-filter 197.157.220.0/22 upto /24 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from route-filter 213.172.128.0/19 upto /24 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 then next policy 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term reject then reject 
+
+[edit]
+danielf@re0.abv02-r01# exit configuration-mode 
+The configuration has been changed but not committed
+Exiting configuration mode
+
+danielf@re0.abv02-r01> commit
+                       ^
+unknown command.
+
+danielf@re0.abv02-r01> commit   confirmed
+                       ^
+unknown command.
+
+danielf@re0.abv02-r01> commitconfirmed   10
+                       ^
+unknown command.
+
+2025-07-28 18:51:06,395 - __main__ - INFO -   Generating policy: Hoop-telecoms-routes for AS12345
+2025-07-28 18:51:06,395 - __main__ - INFO - Running command: bgpq4 -S AFRINIC -A -J -E -l Hoop-telecoms-routes/route-set1 AS12345 -R 24 -M protocol bgp
+2025-07-28 18:51:07,206 - __main__ - INFO -     Configuration written to: configs/generated/abv02-r01_Hoop-telecoms-routes_20250728_185016.conf
+2025-07-28 18:51:07,207 - __main__ - INFO - 
+Applying configuration to abv02-r01...
+2025-07-28 18:51:37,255 - juniper_configurator - ERROR - Commit failed: # BGP Prefix List for Hoop-telecoms-routes (AS12345)
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement Hoop-telecoms-routes term route-set1 from protocol bgp 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement Hoop-telecoms-routes term route-set1 then next policy 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement Hoop-telecoms-routes term reject then reject 
+
+[edit]
+danielf@re0.abv02-r01# exit configuration-mode 
+The configuration has been changed but not committed
+Exiting configuration mode
+
+danielf@re0.abv02-r01> commit
+                       ^
+unknown command.
+
+danielf@re0.abv02-r01> commit   confirmed
+                       ^
+unknown command.
+
+danielf@re0.abv02-r01> commitconfirmed   10
+                       ^
+unknown command.
+
+2025-07-28 18:51:41,459 - __main__ - ERROR - Failed to apply configuration: # BGP Prefix List for Hoop-telecoms-routes (AS12345)
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement Hoop-telecoms-routes term route-set1 from protocol bgp 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement Hoop-telecoms-routes term route-set1 then next policy 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement Hoop-telecoms-routes term reject then reject 
+
+[edit]
+danielf@re0.abv02-r01# exit configuration-mode 
+The configuration has been changed but not committed
+Exiting configuration mode
+
+danielf@re0.abv02-r01> commit
+                       ^
+unknown command.
+
+danielf@re0.abv02-r01> commit   confirmed
+                       ^
+unknown command.
+
+danielf@re0.abv02-r01> commitconfirmed   10
+                       ^
+unknown command.
+
+2025-07-28 18:51:41,460 - juniper_configurator - INFO - Disconnected from 154.66.247.33
+2025-07-28 18:51:41,461 - __main__ - INFO - 
+Configuration application summary:
+2025-07-28 18:51:41,461 - __main__ - INFO -   - Total policies: 2
+2025-07-28 18:51:41,462 - __main__ - INFO -   - Successfully applied: 0
+2025-07-28 18:51:41,462 - __main__ - INFO -   - Failed: 2
+2025-07-28 18:51:41,462 - __main__ - WARNING - Some configurations failed to apply. Check the logs for details.
+2025-07-28 18:51:41,463 - __main__ - INFO - 
+IMPORTANT: Remember to commit the changes within the rollback window
+2025-07-28 18:51:41,463 - __main__ - INFO - to make them permanent. Use '--commit <router_ip>' to commit.
+2025-07-28 18:57:22,247 - __main__ - INFO - Using configuration file: configs/prefix_policies.yaml
+2025-07-28 18:57:22,248 - __main__ - INFO - Processing router: abv02-r01 (154.66.247.33)
+2025-07-28 18:57:32,974 - juniper_configurator - INFO - Connecting to 154.66.247.33...
+2025-07-28 18:57:33,207 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_7.5)
+2025-07-28 18:57:34,109 - paramiko.transport - INFO - Auth banner: b'\nUNAUTHORISED ACCESS IS STRICTLY PROHIBITED AND WILL BE PROSECUTED BY LAW. \n\nWIOCC Telecom Network Operations Centre \nPhone:  +44 (0)7712 881 590, Email: noc@wiocc.com \n\n'
+2025-07-28 18:57:34,110 - paramiko.transport - INFO - Authentication (password) successful!
+2025-07-28 18:57:35,470 - juniper_configurator - INFO - Successfully connected to 154.66.247.33
+2025-07-28 18:57:35,470 - __main__ - INFO -   Generating policy: WIOCC-ROUTES for AS37439
+2025-07-28 18:57:35,470 - __main__ - INFO - Running command: bgpq4 -S AFRINIC -A -J -E -l WIOCC-ROUTES/route-set1 AS37439 -R 24 -M protocol bgp
+2025-07-28 18:57:36,399 - __main__ - INFO -     Configuration written to: configs/generated/abv02-r01_WIOCC-ROUTES_20250728_185722.conf
+2025-07-28 18:57:36,400 - __main__ - INFO - 
+Applying configuration to abv02-r01...
+2025-07-28 18:58:03,091 - juniper_configurator - ERROR - Commit failed: # BGP Prefix List for WIOCC-ROUTES (AS37439)
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from protocol bgp 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from route-filter 154.66.192.0/22 upto /24 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from route-filter 165.73.160.0/19 upto /24 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from route-filter 197.157.220.0/22 upto /24 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from route-filter 213.172.128.0/19 upto /24 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 then next policy 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term reject then reject 
+
+[edit]
+danielf@re0.abv02-r01# exit configuration-mode 
+The configuration has been changed but not committed
+Exiting configuration mode
+
+danielf@re0.abv02-r01> commit
+                       ^
+unknown command.
+
+danielf@re0.abv02-r01> commit   confirmed
+                       ^
+unknown command.
+
+danielf@re0.abv02-r01> commitconfirmed   10
+                       ^
+unknown command.
+
+2025-07-28 18:58:07,298 - __main__ - ERROR - Failed to apply configuration: # BGP Prefix List for WIOCC-ROUTES (AS37439)
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from protocol bgp 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from route-filter 154.66.192.0/22 upto /24 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from route-filter 165.73.160.0/19 upto /24 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from route-filter 197.157.220.0/22 upto /24 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from route-filter 213.172.128.0/19 upto /24 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 then next policy 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term reject then reject 
+
+[edit]
+danielf@re0.abv02-r01# exit configuration-mode 
+The configuration has been changed but not committed
+Exiting configuration mode
+
+danielf@re0.abv02-r01> commit
+                       ^
+unknown command.
+
+danielf@re0.abv02-r01> commit   confirmed
+                       ^
+unknown command.
+
+danielf@re0.abv02-r01> commitconfirmed   10
+                       ^
+unknown command.
+
+2025-07-28 18:58:07,299 - __main__ - INFO -   Generating policy: Hoop-telecoms-routes for AS12345
+2025-07-28 18:58:07,299 - __main__ - INFO - Running command: bgpq4 -S AFRINIC -A -J -E -l Hoop-telecoms-routes/route-set1 AS12345 -R 24 -M protocol bgp
+2025-07-28 18:58:08,083 - __main__ - INFO -     Configuration written to: configs/generated/abv02-r01_Hoop-telecoms-routes_20250728_185722.conf
+2025-07-28 18:58:08,084 - __main__ - INFO - 
+Applying configuration to abv02-r01...
+2025-07-28 18:58:38,113 - juniper_configurator - ERROR - Commit failed: # BGP Prefix List for Hoop-telecoms-routes (AS12345)
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement Hoop-telecoms-routes term route-set1 from protocol bgp 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement Hoop-telecoms-routes term route-set1 then next policy 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement Hoop-telecoms-routes term reject then reject 
+
+[edit]
+danielf@re0.abv02-r01# exit configuration-mode 
+The configuration has been changed but not committed
+Exiting configuration mode
+
+danielf@re0.abv02-r01> commit
+                       ^
+unknown command.
+
+danielf@re0.abv02-r01> commit   confirmed
+                       ^
+unknown command.
+
+danielf@re0.abv02-r01> commitconfirmed   10
+                       ^
+unknown command.
+
+2025-07-28 18:58:42,319 - __main__ - ERROR - Failed to apply configuration: # BGP Prefix List for Hoop-telecoms-routes (AS12345)
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement Hoop-telecoms-routes term route-set1 from protocol bgp 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement Hoop-telecoms-routes term route-set1 then next policy 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement Hoop-telecoms-routes term reject then reject 
+
+[edit]
+danielf@re0.abv02-r01# exit configuration-mode 
+The configuration has been changed but not committed
+Exiting configuration mode
+
+danielf@re0.abv02-r01> commit
+                       ^
+unknown command.
+
+danielf@re0.abv02-r01> commit   confirmed
+                       ^
+unknown command.
+
+danielf@re0.abv02-r01> commitconfirmed   10
+                       ^
+unknown command.
+
+2025-07-28 18:58:42,320 - juniper_configurator - INFO - Disconnected from 154.66.247.33
+2025-07-28 18:58:42,320 - __main__ - INFO - 
+Configuration application summary:
+2025-07-28 18:58:42,321 - __main__ - INFO -   - Total policies: 2
+2025-07-28 18:58:42,321 - __main__ - INFO -   - Successfully applied: 0
+2025-07-28 18:58:42,322 - __main__ - INFO -   - Failed: 2
+2025-07-28 18:58:42,322 - __main__ - WARNING - Some configurations failed to apply. Check the logs for details.
+2025-07-28 18:58:42,322 - __main__ - INFO - 
+IMPORTANT: Remember to commit the changes within the rollback window
+2025-07-28 18:58:42,323 - __main__ - INFO - to make them permanent. Use '--commit <router_ip>' to commit.
+2025-07-28 19:11:09,522 - __main__ - INFO - Using configuration file: configs/prefix_policies.yaml
+2025-07-28 19:11:09,523 - __main__ - INFO - Processing router: abv02-r01 (154.66.247.33)
+2025-07-28 19:11:20,108 - juniper_configurator - INFO - Connecting to 154.66.247.33...
+2025-07-28 19:11:20,354 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_7.5)
+2025-07-28 19:11:21,294 - paramiko.transport - INFO - Auth banner: b'\nUNAUTHORISED ACCESS IS STRICTLY PROHIBITED AND WILL BE PROSECUTED BY LAW. \n\nWIOCC Telecom Network Operations Centre \nPhone:  +44 (0)7712 881 590, Email: noc@wiocc.com \n\n'
+2025-07-28 19:11:21,295 - paramiko.transport - INFO - Authentication (password) successful!
+2025-07-28 19:11:22,642 - juniper_configurator - INFO - Successfully connected to 154.66.247.33
+2025-07-28 19:11:22,642 - __main__ - INFO -   Generating policy: WIOCC-ROUTES for AS37439
+2025-07-28 19:11:22,643 - __main__ - INFO - Running command: bgpq4 -S AFRINIC -A -J -E -l WIOCC-ROUTES/route-set1 AS37439 -R 24 -M protocol bgp
+2025-07-28 19:11:23,589 - __main__ - INFO -     Configuration written to: configs/generated/abv02-r01_WIOCC-ROUTES_20250728_191109.conf
+2025-07-28 19:11:23,590 - __main__ - INFO - 
+Applying configuration to abv02-r01...
+2025-07-28 19:11:52,216 - juniper_configurator - ERROR - Commit failed: # BGP Prefix List for WIOCC-ROUTES (AS37439)
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from protocol bgp 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from route-filter 154.66.192.0/22 upto /24 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from route-filter 165.73.160.0/19 upto /24 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from route-filter 197.157.220.0/22 upto /24 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from route-filter 213.172.128.0/19 upto /24 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 then next policy 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term reject then reject 
+
+[edit]
+danielf@re0.abv02-r01# exit configuration-mode 
+The configuration has been changed but not committed
+Exiting configuration mode
+
+danielf@re0.abv02-r01> commit
+                       ^
+unknown command.
+
+danielf@re0.abv02-r01> commit   confirmed
+                       ^
+unknown command.
+
+danielf@re0.abv02-r01> commitconfirmed   10
+                       ^
+unknown command.
+
+2025-07-28 19:11:56,423 - __main__ - ERROR - Failed to apply configuration: # BGP Prefix List for WIOCC-ROUTES (AS37439)
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from protocol bgp 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from route-filter 154.66.192.0/22 upto /24 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from route-filter 165.73.160.0/19 upto /24 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from route-filter 197.157.220.0/22 upto /24 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from route-filter 213.172.128.0/19 upto /24 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 then next policy 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term reject then reject 
+
+[edit]
+danielf@re0.abv02-r01# exit configuration-mode 
+The configuration has been changed but not committed
+Exiting configuration mode
+
+danielf@re0.abv02-r01> commit
+                       ^
+unknown command.
+
+danielf@re0.abv02-r01> commit   confirmed
+                       ^
+unknown command.
+
+danielf@re0.abv02-r01> commitconfirmed   10
+                       ^
+unknown command.
+
+2025-07-28 19:11:56,424 - __main__ - INFO -   Generating policy: Hoop-telecoms-routes for AS12345
+2025-07-28 19:11:56,424 - __main__ - INFO - Running command: bgpq4 -S AFRINIC -A -J -E -l Hoop-telecoms-routes/route-set1 AS12345 -R 24 -M protocol bgp
+2025-07-28 19:11:57,296 - __main__ - INFO -     Configuration written to: configs/generated/abv02-r01_Hoop-telecoms-routes_20250728_191109.conf
+2025-07-28 19:11:57,307 - __main__ - INFO - 
+Applying configuration to abv02-r01...
+2025-07-28 19:12:27,357 - juniper_configurator - ERROR - Commit failed: # BGP Prefix List for Hoop-telecoms-routes (AS12345)
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement Hoop-telecoms-routes term route-set1 from protocol bgp 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement Hoop-telecoms-routes term route-set1 then next policy 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement Hoop-telecoms-routes term reject then reject 
+
+[edit]
+danielf@re0.abv02-r01# exit configuration-mode 
+The configuration has been changed but not committed
+Exiting configuration mode
+
+danielf@re0.abv02-r01> commit
+                       ^
+unknown command.
+
+danielf@re0.abv02-r01> commit   confirmed
+                       ^
+unknown command.
+
+danielf@re0.abv02-r01> commitconfirmed   10
+                       ^
+unknown command.
+
+2025-07-28 19:12:31,563 - __main__ - ERROR - Failed to apply configuration: # BGP Prefix List for Hoop-telecoms-routes (AS12345)
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement Hoop-telecoms-routes term route-set1 from protocol bgp 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement Hoop-telecoms-routes term route-set1 then next policy 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement Hoop-telecoms-routes term reject then reject 
+
+[edit]
+danielf@re0.abv02-r01# exit configuration-mode 
+The configuration has been changed but not committed
+Exiting configuration mode
+
+danielf@re0.abv02-r01> commit
+                       ^
+unknown command.
+
+danielf@re0.abv02-r01> commit   confirmed
+                       ^
+unknown command.
+
+danielf@re0.abv02-r01> commitconfirmed   10
+                       ^
+unknown command.
+
+2025-07-28 19:12:31,564 - juniper_configurator - INFO - Disconnected from 154.66.247.33
+2025-07-28 19:12:31,565 - __main__ - INFO - 
+Configuration application summary:
+2025-07-28 19:12:31,565 - __main__ - INFO -   - Total policies: 2
+2025-07-28 19:12:31,566 - __main__ - INFO -   - Successfully applied: 0
+2025-07-28 19:12:31,566 - __main__ - INFO -   - Failed: 2
+2025-07-28 19:12:31,566 - __main__ - WARNING - Some configurations failed to apply. Check the logs for details.
+2025-07-28 19:12:31,566 - __main__ - INFO - 
+IMPORTANT: Remember to commit the changes within the rollback window
+2025-07-28 19:12:31,567 - __main__ - INFO - to make them permanent. Use '--commit <router_ip>' to commit.
+2025-07-29 07:41:16,645 - __main__ - INFO - Using configuration file: configs/prefix_policies.yaml
+2025-07-29 07:41:16,646 - __main__ - INFO - Processing router: abv02-r01 (154.66.247.33)
+2025-07-29 07:41:28,646 - juniper_configurator - INFO - Connecting to 154.66.247.33...
+2025-07-29 07:41:28,900 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_7.5)
+2025-07-29 07:41:29,832 - paramiko.transport - INFO - Auth banner: b'\nUNAUTHORISED ACCESS IS STRICTLY PROHIBITED AND WILL BE PROSECUTED BY LAW. \n\nWIOCC Telecom Network Operations Centre \nPhone:  +44 (0)7712 881 590, Email: noc@wiocc.com \n\n'
+2025-07-29 07:41:29,833 - paramiko.transport - INFO - Authentication (password) successful!
+2025-07-29 07:41:31,230 - juniper_configurator - INFO - Successfully connected to 154.66.247.33
+2025-07-29 07:41:31,230 - __main__ - INFO -   Generating policy: WIOCC-ROUTES for AS37439
+2025-07-29 07:41:31,231 - __main__ - INFO - Running command: bgpq4 -S AFRINIC -A -J -E -l WIOCC-ROUTES/route-set1 AS37439 -R 24 -M protocol bgp
+2025-07-29 07:41:32,176 - __main__ - INFO -     Configuration written to: configs/generated/abv02-r01_WIOCC-ROUTES_20250729_074116.conf
+2025-07-29 07:41:32,178 - __main__ - INFO - 
+Applying configuration to abv02-r01...
+2025-07-29 07:42:00,797 - juniper_configurator - ERROR - Commit failed: # BGP Prefix List for WIOCC-ROUTES (AS37439)
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from protocol bgp 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from route-filter 154.66.192.0/22 upto /24 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from route-filter 165.73.160.0/19 upto /24 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from route-filter 197.157.220.0/22 upto /24 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from route-filter 213.172.128.0/19 upto /24 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 then next policy 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term reject then reject 
+
+[edit]
+danielf@re0.abv02-r01# exit configuration-mode 
+The configuration has been changed but not committed
+Exiting configuration mode
+
+danielf@re0.abv02-r01> commit
+                       ^
+unknown command.
+
+danielf@re0.abv02-r01> commit   confirmed
+                       ^
+unknown command.
+
+danielf@re0.abv02-r01> commitconfirmed   10
+                       ^
+unknown command.
+
+2025-07-29 07:42:05,004 - __main__ - ERROR - Failed to apply configuration: # BGP Prefix List for WIOCC-ROUTES (AS37439)
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from protocol bgp 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from route-filter 154.66.192.0/22 upto /24 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from route-filter 165.73.160.0/19 upto /24 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from route-filter 197.157.220.0/22 upto /24 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 from route-filter 213.172.128.0/19 upto /24 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term route-set1 then next policy 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement WIOCC-ROUTES term reject then reject 
+
+[edit]
+danielf@re0.abv02-r01# exit configuration-mode 
+The configuration has been changed but not committed
+Exiting configuration mode
+
+danielf@re0.abv02-r01> commit
+                       ^
+unknown command.
+
+danielf@re0.abv02-r01> commit   confirmed
+                       ^
+unknown command.
+
+danielf@re0.abv02-r01> commitconfirmed   10
+                       ^
+unknown command.
+
+2025-07-29 07:42:05,005 - __main__ - INFO -   Generating policy: Hoop-telecoms-routes for AS12345
+2025-07-29 07:42:05,005 - __main__ - INFO - Running command: bgpq4 -S AFRINIC -A -J -E -l Hoop-telecoms-routes/route-set1 AS12345 -R 24 -M protocol bgp
+2025-07-29 07:42:05,853 - __main__ - INFO -     Configuration written to: configs/generated/abv02-r01_Hoop-telecoms-routes_20250729_074116.conf
+2025-07-29 07:42:05,854 - __main__ - INFO - 
+Applying configuration to abv02-r01...
+2025-07-29 07:42:35,903 - juniper_configurator - ERROR - Commit failed: # BGP Prefix List for Hoop-telecoms-routes (AS12345)
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement Hoop-telecoms-routes term route-set1 from protocol bgp 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement Hoop-telecoms-routes term route-set1 then next policy 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement Hoop-telecoms-routes term reject then reject 
+
+[edit]
+danielf@re0.abv02-r01# exit configuration-mode 
+The configuration has been changed but not committed
+Exiting configuration mode
+
+danielf@re0.abv02-r01> commit
+                       ^
+unknown command.
+
+danielf@re0.abv02-r01> commit   confirmed
+                       ^
+unknown command.
+
+danielf@re0.abv02-r01> commitconfirmed   10
+                       ^
+unknown command.
+
+2025-07-29 07:42:40,107 - __main__ - ERROR - Failed to apply configuration: # BGP Prefix List for Hoop-telecoms-routes (AS12345)
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement Hoop-telecoms-routes term route-set1 from protocol bgp 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement Hoop-telecoms-routes term route-set1 then next policy 
+
+[edit]
+danielf@re0.abv02-r01# set policy-options policy-statement Hoop-telecoms-routes term reject then reject 
+
+[edit]
+danielf@re0.abv02-r01# exit configuration-mode 
+The configuration has been changed but not committed
+Exiting configuration mode
+
+danielf@re0.abv02-r01> commit
+                       ^
+unknown command.
+
+danielf@re0.abv02-r01> commit   confirmed
+                       ^
+unknown command.
+
+danielf@re0.abv02-r01> commitconfirmed   10
+                       ^
+unknown command.
+
+2025-07-29 07:42:40,108 - juniper_configurator - INFO - Disconnected from 154.66.247.33
+2025-07-29 07:42:40,108 - __main__ - INFO - 
+Configuration application summary:
+2025-07-29 07:42:40,108 - __main__ - INFO -   - Total policies: 2
+2025-07-29 07:42:40,109 - __main__ - INFO -   - Successfully applied: 0
+2025-07-29 07:42:40,109 - __main__ - INFO -   - Failed: 2
+2025-07-29 07:42:40,109 - __main__ - WARNING - Some configurations failed to apply. Check the logs for details.
+2025-07-29 07:42:40,109 - __main__ - INFO - 
+IMPORTANT: Remember to commit the changes within the rollback window
+2025-07-29 07:42:40,109 - __main__ - INFO - to make them permanent. Use '--commit <router_ip>' to commit.
+2025-07-29 07:49:30,464 - __main__ - INFO - Using configuration file: configs/prefix_policies.yaml
+2025-07-29 07:49:30,465 - __main__ - INFO - Processing router: abv02-r01 (154.66.247.33)
+2025-07-29 07:50:32,755 - juniper_configurator - INFO - Connecting to 154.66.247.33...
+2025-07-29 07:50:32,988 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_7.5)
+2025-07-29 07:50:34,897 - paramiko.transport - INFO - Auth banner: b'\nUNAUTHORISED ACCESS IS STRICTLY PROHIBITED AND WILL BE PROSECUTED BY LAW. \n\nWIOCC Telecom Network Operations Centre \nPhone:  +44 (0)7712 881 590, Email: noc@wiocc.com \n\n'
+2025-07-29 07:50:34,898 - paramiko.transport - INFO - Authentication (password) failed.
+2025-07-29 07:50:34,898 - juniper_configurator - ERROR - Authentication failed for sds@154.66.247.33
+2025-07-29 07:50:34,899 - __main__ - ERROR - Failed to connect to abv02-r01, skipping...
+2025-07-29 07:50:34,899 - __main__ - INFO - Configuration generation complete!
+2025-07-29 07:54:40,149 - __main__ - INFO - Using configuration file: configs/prefix_policies.yaml
+2025-07-29 07:54:40,150 - __main__ - INFO - Processing router: abv02-r01 (154.66.247.33)
+2025-07-29 07:54:52,520 - juniper_configurator - INFO - Connecting to 154.66.247.33...
+2025-07-29 07:54:52,758 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_7.5)
+2025-07-29 07:54:53,672 - paramiko.transport - INFO - Auth banner: b'\nUNAUTHORISED ACCESS IS STRICTLY PROHIBITED AND WILL BE PROSECUTED BY LAW. \n\nWIOCC Telecom Network Operations Centre \nPhone:  +44 (0)7712 881 590, Email: noc@wiocc.com \n\n'
+2025-07-29 07:54:53,673 - paramiko.transport - INFO - Authentication (password) successful!
+2025-07-29 07:54:55,063 - juniper_configurator - INFO - Successfully connected to 154.66.247.33
+2025-07-29 07:54:55,063 - __main__ - INFO -   Generating policy: WIOCC-ROUTES for AS37439
+2025-07-29 07:54:55,064 - __main__ - INFO - Running command: bgpq4 -S AFRINIC -A -J -E -l WIOCC-ROUTES/route-set1 AS37439 -R 24 -M protocol bgp
+2025-07-29 07:54:56,008 - __main__ - INFO -     Configuration written to: configs/generated/abv02-r01_WIOCC-ROUTES_20250729_075440.conf
+2025-07-29 07:54:56,008 - __main__ - INFO - 
+Applying configuration to abv02-r01...
+2025-07-29 07:54:56,010 - juniper_configurator - INFO - Entering configuration mode...
+2025-07-29 07:55:02,632 - juniper_configurator - INFO - Sending configuration commands...
+2025-07-29 07:55:32,065 - juniper_configurator - INFO - Running commit confirmed...
+2025-07-29 07:55:36,270 - juniper_configurator - INFO - 
+======================================================================
+2025-07-29 07:55:36,271 - juniper_configurator - INFO - CONFIGURATION APPLIED WITH COMMIT CONFIRMED 10
+2025-07-29 07:55:36,271 - juniper_configurator - INFO - ======================================================================
+2025-07-29 07:55:36,271 - juniper_configurator - INFO - 
+IMPORTANT: The configuration has been applied with a 10-minute rollback window.
+2025-07-29 07:55:36,272 - juniper_configurator - INFO - To make these changes permanent, you must run 'commit' within the next 10 minutes.
+2025-07-29 07:55:36,272 - juniper_configurator - INFO - 
+If you do not commit within this window, the configuration
+2025-07-29 07:55:36,272 - juniper_configurator - INFO - will be automatically rolled back to its previous state.
+2025-07-29 07:55:36,272 - juniper_configurator - INFO - ----------------------------------------------------------------------
+
+2025-07-29 07:55:36,273 - __main__ - INFO -   Generating policy: Hoop-telecoms-routes for AS12345
+2025-07-29 07:55:36,273 - __main__ - INFO - Running command: bgpq4 -S AFRINIC -A -J -E -l Hoop-telecoms-routes/route-set1 AS12345 -R 24 -M protocol bgp
+2025-07-29 07:55:37,096 - __main__ - INFO -     Configuration written to: configs/generated/abv02-r01_Hoop-telecoms-routes_20250729_075440.conf
+2025-07-29 07:55:37,097 - __main__ - INFO - 
+Applying configuration to abv02-r01...
+2025-07-29 07:55:37,098 - juniper_configurator - INFO - Entering configuration mode...
+2025-07-29 07:55:41,304 - juniper_configurator - INFO - Sending configuration commands...
+2025-07-29 07:55:53,919 - juniper_configurator - INFO - Running commit confirmed...
+2025-07-29 07:55:58,123 - juniper_configurator - INFO - 
+======================================================================
+2025-07-29 07:55:58,124 - juniper_configurator - INFO - CONFIGURATION APPLIED WITH COMMIT CONFIRMED 10
+2025-07-29 07:55:58,124 - juniper_configurator - INFO - ======================================================================
+2025-07-29 07:55:58,125 - juniper_configurator - INFO - 
+IMPORTANT: The configuration has been applied with a 10-minute rollback window.
+2025-07-29 07:55:58,125 - juniper_configurator - INFO - To make these changes permanent, you must run 'commit' within the next 10 minutes.
+2025-07-29 07:55:58,125 - juniper_configurator - INFO - 
+If you do not commit within this window, the configuration
+2025-07-29 07:55:58,126 - juniper_configurator - INFO - will be automatically rolled back to its previous state.
+2025-07-29 07:55:58,126 - juniper_configurator - INFO - ----------------------------------------------------------------------
+
+2025-07-29 07:55:58,127 - juniper_configurator - INFO - Disconnected from 154.66.247.33
+2025-07-29 07:55:58,128 - __main__ - INFO - 
+Configuration application summary:
+2025-07-29 07:55:58,128 - __main__ - INFO -   - Total policies: 2
+2025-07-29 07:55:58,128 - __main__ - INFO -   - Successfully applied: 2
+2025-07-29 07:55:58,129 - __main__ - INFO -   - Failed: 0
+2025-07-29 07:55:58,129 - __main__ - INFO - 
+IMPORTANT: Remember to commit the changes within the rollback window
+2025-07-29 07:55:58,129 - __main__ - INFO - to make them permanent. Use '--commit <router_ip>' to commit.
+2025-07-29 09:30:03,023 - __main__ - INFO - Using configuration file: configs/prefix_policies.yaml
+2025-07-29 09:30:03,024 - __main__ - INFO - Processing router: abv02-r01 (154.66.247.33)
+2025-07-29 09:30:03,024 - juniper_configurator - INFO - Connecting to 154.66.247.33...
+2025-07-29 09:30:03,260 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_7.5)
+2025-07-29 09:30:04,167 - paramiko.transport - INFO - Auth banner: b'\nUNAUTHORISED ACCESS IS STRICTLY PROHIBITED AND WILL BE PROSECUTED BY LAW. \n\nWIOCC Telecom Network Operations Centre \nPhone:  +44 (0)7712 881 590, Email: noc@wiocc.com \n\n'
+2025-07-29 09:30:04,168 - paramiko.transport - INFO - Authentication (password) successful!
+2025-07-29 09:30:05,446 - juniper_configurator - INFO - Successfully connected to 154.66.247.33
+2025-07-29 09:30:05,448 - __main__ - INFO -   Generating policy: WIOCC-ROUTES for AS37439
+2025-07-29 09:30:05,448 - __main__ - INFO - Running command: bgpq4 -S AFRINIC -A -J -E -l WIOCC-ROUTES/route-set1 AS37439 -R 24 -M protocol bgp
+2025-07-29 09:30:06,532 - __main__ - INFO -     Configuration written to: configs/generated/abv02-r01_WIOCC-ROUTES_20250729_093003.conf
+2025-07-29 09:30:06,534 - __main__ - INFO - 
+Applying configuration to abv02-r01...
+2025-07-29 09:30:06,535 - juniper_configurator - INFO - Entering configuration mode...
+2025-07-29 09:30:13,159 - juniper_configurator - INFO - Sending configuration commands...
+2025-07-29 09:30:42,604 - juniper_configurator - INFO - Running commit confirmed...
+2025-07-29 09:30:46,812 - juniper_configurator - INFO - 
+======================================================================
+2025-07-29 09:30:46,812 - juniper_configurator - INFO - CONFIGURATION APPLIED WITH COMMIT CONFIRMED 10
+2025-07-29 09:30:46,812 - juniper_configurator - INFO - ======================================================================
+2025-07-29 09:30:46,813 - juniper_configurator - INFO - 
+IMPORTANT: The configuration has been applied with a 10-minute rollback window.
+2025-07-29 09:30:46,813 - juniper_configurator - INFO - To make these changes permanent, you must run 'commit' within the next 10 minutes.
+2025-07-29 09:30:46,813 - juniper_configurator - INFO - 
+If you do not commit within this window, the configuration
+2025-07-29 09:30:46,813 - juniper_configurator - INFO - will be automatically rolled back to its previous state.
+2025-07-29 09:30:46,813 - juniper_configurator - INFO - ----------------------------------------------------------------------
+
+2025-07-29 09:30:46,814 - __main__ - INFO -   Generating policy: Hoop-telecoms-routes for AS12345
+2025-07-29 09:30:46,814 - __main__ - INFO - Running command: bgpq4 -S AFRINIC -A -J -E -l Hoop-telecoms-routes/route-set1 AS12345 -R 24 -M protocol bgp
+2025-07-29 09:30:47,831 - __main__ - INFO -     Configuration written to: configs/generated/abv02-r01_Hoop-telecoms-routes_20250729_093003.conf
+2025-07-29 09:30:47,838 - __main__ - INFO - 
+Applying configuration to abv02-r01...
+2025-07-29 09:30:47,839 - juniper_configurator - INFO - Entering configuration mode...
+2025-07-29 09:30:52,047 - juniper_configurator - INFO - Sending configuration commands...
+2025-07-29 09:31:04,662 - juniper_configurator - INFO - Running commit confirmed...
+2025-07-29 09:31:08,869 - juniper_configurator - INFO - 
+======================================================================
+2025-07-29 09:31:08,870 - juniper_configurator - INFO - CONFIGURATION APPLIED WITH COMMIT CONFIRMED 10
+2025-07-29 09:31:08,870 - juniper_configurator - INFO - ======================================================================
+2025-07-29 09:31:08,870 - juniper_configurator - INFO - 
+IMPORTANT: The configuration has been applied with a 10-minute rollback window.
+2025-07-29 09:31:08,870 - juniper_configurator - INFO - To make these changes permanent, you must run 'commit' within the next 10 minutes.
+2025-07-29 09:31:08,870 - juniper_configurator - INFO - 
+If you do not commit within this window, the configuration
+2025-07-29 09:31:08,870 - juniper_configurator - INFO - will be automatically rolled back to its previous state.
+2025-07-29 09:31:08,871 - juniper_configurator - INFO - ----------------------------------------------------------------------
+
+2025-07-29 09:31:08,873 - juniper_configurator - INFO - Disconnected from 154.66.247.33
+2025-07-29 09:31:08,873 - __main__ - INFO - 
+Configuration application summary:
+2025-07-29 09:31:08,873 - __main__ - INFO -   - Total policies: 2
+2025-07-29 09:31:08,873 - __main__ - INFO -   - Successfully applied: 2
+2025-07-29 09:31:08,874 - __main__ - INFO -   - Failed: 0
+2025-07-29 09:31:08,874 - __main__ - INFO - 
+IMPORTANT: Remember to commit the changes within the rollback window
+2025-07-29 09:31:08,874 - __main__ - INFO - to make them permanent. Use '--commit <router_ip>' to commit.
+2025-07-29 10:19:55,105 - __main__ - INFO - Using configuration file: configs/prefix_policies.yaml
+2025-07-29 10:19:55,106 - __main__ - INFO - Processing router: abv02-r01 (154.66.247.33)
+2025-07-29 10:19:55,106 - juniper_configurator - INFO - Connecting to 154.66.247.33...
+2025-07-29 10:19:55,340 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_7.5)
+2025-07-29 10:19:56,261 - paramiko.transport - INFO - Auth banner: b'\nUNAUTHORISED ACCESS IS STRICTLY PROHIBITED AND WILL BE PROSECUTED BY LAW. \n\nWIOCC Telecom Network Operations Centre \nPhone:  +44 (0)7712 881 590, Email: noc@wiocc.com \n\n'
+2025-07-29 10:19:56,263 - paramiko.transport - INFO - Authentication (password) successful!
+2025-07-29 10:19:57,632 - juniper_configurator - INFO - Successfully connected to 154.66.247.33
+2025-07-29 10:19:57,633 - __main__ - INFO -   Generating policy: WIOCC-ROUTES for AS37439
+2025-07-29 10:19:57,634 - __main__ - INFO - Running command: bgpq4 -S AFRINIC -A -J -E -l WIOCC-ROUTES/route-set1 AS37439 -R 24 -M protocol bgp
+2025-07-29 10:19:58,585 - __main__ - INFO -     Configuration written to: configs/generated/abv02-r01_WIOCC-ROUTES_20250729_101955.conf
+2025-07-29 10:19:58,586 - __main__ - INFO - 
+Applying configuration to abv02-r01...
+2025-07-29 10:19:58,587 - juniper_configurator - INFO - Entering configuration mode...
+2025-07-29 10:20:05,215 - juniper_configurator - INFO - Sending configuration commands...
+2025-07-29 10:20:34,657 - juniper_configurator - INFO - Running commit confirmed...
+2025-07-29 10:20:49,138 - juniper_configurator - INFO - 
+======================================================================
+2025-07-29 10:20:49,139 - juniper_configurator - INFO - CONFIGURATION APPLIED WITH COMMIT CONFIRMED 3
+2025-07-29 10:20:49,139 - juniper_configurator - INFO - ======================================================================
+2025-07-29 10:20:49,140 - juniper_configurator - INFO - 
+IMPORTANT: The configuration has been applied with a 3-minute rollback window.
+2025-07-29 10:20:49,140 - juniper_configurator - INFO - To make these changes permanent, you must run 'commit' within the next 3 minutes.
+2025-07-29 10:20:49,140 - juniper_configurator - INFO - 
+If you do not commit within this window, the configuration
+2025-07-29 10:20:49,141 - juniper_configurator - INFO - will be automatically rolled back to its previous state.
+2025-07-29 10:20:49,141 - juniper_configurator - INFO - ----------------------------------------------------------------------
+
+2025-07-29 10:20:49,142 - __main__ - WARNING - 
+********************************************************************************
+WARNING: Configuration applied with commit confirmed 3 minutes.
+The device abv02-r01 will automatically roll back in 3 minutes
+if no commit is received. To make the changes permanent, run:
+  python scripts/bgpq4_netmiko.py --commit 154.66.247.33
+********************************************************************************
+
+2025-07-29 10:20:49,143 - __main__ - INFO -   Generating policy: Hoop-telecoms-routes for AS12345
+2025-07-29 10:20:49,143 - __main__ - INFO - Running command: bgpq4 -S AFRINIC -A -J -E -l Hoop-telecoms-routes/route-set1 AS12345 -R 24 -M protocol bgp
+2025-07-29 10:20:50,123 - __main__ - INFO -     Configuration written to: configs/generated/abv02-r01_Hoop-telecoms-routes_20250729_101955.conf
+2025-07-29 10:20:50,124 - __main__ - INFO - 
+Configuration application summary:
+2025-07-29 10:20:50,125 - __main__ - INFO -   - Total policies: 1
+2025-07-29 10:20:50,125 - __main__ - INFO -   - Successfully applied: 1
+2025-07-29 10:20:50,126 - __main__ - INFO -   - Failed: 0
+2025-07-29 10:20:50,126 - __main__ - INFO - 
+IMPORTANT: Remember to commit the changes within the rollback window
+2025-07-29 10:20:50,131 - __main__ - INFO - to make them permanent. Use '--commit <router_ip>' to commit.
+2025-07-29 10:24:53,538 - __main__ - INFO - Using configuration file: configs/prefix_policies.yaml
+2025-07-29 10:24:53,538 - __main__ - INFO - Processing router: abv02-r01 (154.66.247.33)
+2025-07-29 10:24:53,539 - juniper_configurator - INFO - Connecting to 154.66.247.33...
+2025-07-29 10:24:53,773 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_7.5)
+2025-07-29 10:24:54,678 - paramiko.transport - INFO - Auth banner: b'\nUNAUTHORISED ACCESS IS STRICTLY PROHIBITED AND WILL BE PROSECUTED BY LAW. \n\nWIOCC Telecom Network Operations Centre \nPhone:  +44 (0)7712 881 590, Email: noc@wiocc.com \n\n'
+2025-07-29 10:24:54,679 - paramiko.transport - INFO - Authentication (password) successful!
+2025-07-29 10:24:56,047 - juniper_configurator - INFO - Successfully connected to 154.66.247.33
+2025-07-29 10:24:56,047 - __main__ - INFO -   Generating policy: WIOCC-ROUTES for AS37439
+2025-07-29 10:24:56,048 - __main__ - INFO - Running command: bgpq4 -S AFRINIC -A -J -E -l WIOCC-ROUTES/route-set1 AS37439 -R 24 -M protocol bgp
+2025-07-29 10:24:56,950 - __main__ - INFO -     Configuration written to: configs/generated/abv02-r01_WIOCC-ROUTES_20250729_102453.conf
+2025-07-29 10:24:56,951 - __main__ - INFO - 
+Applying configuration to abv02-r01...
+2025-07-29 10:24:56,952 - juniper_configurator - INFO - Entering configuration mode...
+2025-07-29 10:25:03,574 - juniper_configurator - INFO - Sending configuration commands...
+2025-07-29 10:25:33,007 - juniper_configurator - INFO - Running commit confirmed...
+2025-07-29 10:25:47,505 - juniper_configurator - INFO - 
+======================================================================
+2025-07-29 10:25:47,505 - juniper_configurator - INFO - CONFIGURATION APPLIED WITH COMMIT CONFIRMED 3
+2025-07-29 10:25:47,506 - juniper_configurator - INFO - ======================================================================
+2025-07-29 10:25:47,506 - juniper_configurator - INFO - 
+IMPORTANT: The configuration has been applied with a 3-minute rollback window.
+2025-07-29 10:25:47,507 - juniper_configurator - INFO - To make these changes permanent, you must run 'commit' within the next 3 minutes.
+2025-07-29 10:25:47,507 - juniper_configurator - INFO - 
+If you do not commit within this window, the configuration
+2025-07-29 10:25:47,507 - juniper_configurator - INFO - will be automatically rolled back to its previous state.
+2025-07-29 10:25:47,508 - juniper_configurator - INFO - ----------------------------------------------------------------------
+
+2025-07-29 10:25:47,508 - __main__ - WARNING - 
+********************************************************************************
+WARNING: Configuration applied with commit confirmed 3 minutes.
+The device abv02-r01 will automatically roll back in 3 minutes
+if no commit is received. To make the changes permanent, run:
+  python scripts/bgpq4_netmiko.py --commit 154.66.247.33
+********************************************************************************
+
+2025-07-29 10:25:47,509 - __main__ - INFO -   Generating policy: Hoop-telecoms-routes for AS12345
+2025-07-29 10:25:47,509 - __main__ - INFO - Running command: bgpq4 -S AFRINIC -A -J -E -l Hoop-telecoms-routes/route-set1 AS12345 -R 24 -M protocol bgp
+2025-07-29 10:25:48,351 - __main__ - INFO -     Configuration written to: configs/generated/abv02-r01_Hoop-telecoms-routes_20250729_102453.conf
+2025-07-29 10:25:48,352 - __main__ - INFO - 
+Configuration application summary:
+2025-07-29 10:25:48,352 - __main__ - INFO -   - Total policies: 1
+2025-07-29 10:25:48,353 - __main__ - INFO -   - Successfully applied: 1
+2025-07-29 10:25:48,353 - __main__ - INFO -   - Failed: 0
+2025-07-29 10:25:48,354 - __main__ - INFO - 
+IMPORTANT: Remember to commit the changes within the rollback window
+2025-07-29 10:25:48,354 - __main__ - INFO - to make them permanent. Use '--commit <router_ip>' to commit.
+2025-07-29 10:39:02,218 - __main__ - ERROR - Config file not found: path/to/config.yaml
+2025-07-29 10:41:18,723 - __main__ - ERROR - Config file not found: bgp_prefix_automation/configs/generated
+2025-07-30 09:53:08,124 - __main__ - INFO - Using configuration file: configs/prefix_policies.yaml
+2025-07-30 09:53:08,125 - __main__ - INFO - Processing router: abv02-r01 (154.66.247.33)
+2025-07-30 09:53:08,125 - juniper_configurator - INFO - Connecting to 154.66.247.33...
+2025-07-30 09:53:08,360 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_7.5)
+2025-07-30 09:53:09,268 - paramiko.transport - INFO - Auth banner: b'\nUNAUTHORISED ACCESS IS STRICTLY PROHIBITED AND WILL BE PROSECUTED BY LAW. \n\nWIOCC Telecom Network Operations Centre \nPhone:  +44 (0)7712 881 590, Email: noc@wiocc.com \n\n'
+2025-07-30 09:53:09,269 - paramiko.transport - INFO - Authentication (password) successful!
+2025-07-30 09:53:10,568 - juniper_configurator - INFO - Successfully connected to 154.66.247.33
+2025-07-30 09:53:10,569 - __main__ - INFO -   Generating policy: WIOCC-ROUTES for AS37439
+2025-07-30 09:53:10,569 - __main__ - INFO - Running command: bgpq4 -S AFRINIC -A -J -E -l WIOCC-ROUTES/route-set1 AS37439 -R 24 -M protocol bgp
+2025-07-30 09:53:11,920 - __main__ - INFO -     Configuration written to: configs/generated/abv02-r01_WIOCC-ROUTES_20250730_095308.conf
+2025-07-30 09:53:11,922 - __main__ - INFO - 
+Applying configuration to abv02-r01...
+2025-07-30 09:53:11,927 - juniper_configurator - INFO - Entering configuration mode...
+2025-07-30 09:53:18,550 - juniper_configurator - INFO - Sending configuration commands...
+2025-07-30 09:53:47,988 - juniper_configurator - INFO - Running commit confirmed...
+2025-07-30 09:54:02,548 - juniper_configurator - INFO - 
+======================================================================
+2025-07-30 09:54:02,549 - juniper_configurator - INFO - CONFIGURATION APPLIED WITH COMMIT CONFIRMED 3
+2025-07-30 09:54:02,549 - juniper_configurator - INFO - ======================================================================
+2025-07-30 09:54:02,549 - juniper_configurator - INFO - 
+IMPORTANT: The configuration has been applied with a 3-minute rollback window.
+2025-07-30 09:54:02,550 - juniper_configurator - INFO - To make these changes permanent, you must run 'commit' within the next 3 minutes.
+2025-07-30 09:54:02,550 - juniper_configurator - INFO - 
+If you do not commit within this window, the configuration
+2025-07-30 09:54:02,550 - juniper_configurator - INFO - will be automatically rolled back to its previous state.
+2025-07-30 09:54:02,550 - juniper_configurator - INFO - ----------------------------------------------------------------------
+
+2025-07-30 09:54:02,551 - __main__ - WARNING - 
+********************************************************************************
+WARNING: Configuration applied with commit confirmed 3 minutes.
+The device abv02-r01 will automatically roll back in 3 minutes
+if no commit is received. To make the changes permanent, run:
+  python scripts/bgpq4_netmiko.py --commit 154.66.247.33
+********************************************************************************
+
+2025-07-30 09:54:02,551 - __main__ - INFO -   Generating policy: Hoop-telecoms-routes for AS12345
+2025-07-30 09:54:02,552 - __main__ - INFO - Running command: bgpq4 -S AFRINIC -A -J -E -l Hoop-telecoms-routes/route-set1 AS12345 -R 24 -M protocol bgp
+2025-07-30 09:54:03,614 - __main__ - INFO -     Configuration written to: configs/generated/abv02-r01_Hoop-telecoms-routes_20250730_095308.conf
+2025-07-30 09:54:03,628 - __main__ - INFO - 
+Configuration application summary:
+2025-07-30 09:54:03,630 - __main__ - INFO -   - Total policies: 1
+2025-07-30 09:54:03,634 - __main__ - INFO -   - Successfully applied: 1
+2025-07-30 09:54:03,635 - __main__ - INFO -   - Failed: 0
+2025-07-30 09:54:03,635 - __main__ - INFO - 
+IMPORTANT: Remember to commit the changes within the rollback window
+2025-07-30 09:54:03,636 - __main__ - INFO - to make them permanent. Use '--commit <router_ip>' to commit.
+2025-07-30 10:15:43,477 - __main__ - INFO - Using configuration file: configs/prefix_policies.yaml
+2025-07-30 10:15:43,478 - __main__ - INFO - Processing router: abv02-r01 (154.66.247.33)
+2025-07-30 10:15:43,479 - juniper_configurator - INFO - Connecting to 154.66.247.33...
+2025-07-30 10:15:43,715 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_7.5)
+2025-07-30 10:15:44,628 - paramiko.transport - INFO - Auth banner: b'\nUNAUTHORISED ACCESS IS STRICTLY PROHIBITED AND WILL BE PROSECUTED BY LAW. \n\nWIOCC Telecom Network Operations Centre \nPhone:  +44 (0)7712 881 590, Email: noc@wiocc.com \n\n'
+2025-07-30 10:15:44,630 - paramiko.transport - INFO - Authentication (password) successful!
+2025-07-30 10:15:45,929 - juniper_configurator - INFO - Successfully connected to 154.66.247.33
+2025-07-30 10:15:45,929 - __main__ - INFO -   Generating policy: WIOCC-ROUTES for AS37439
+2025-07-30 10:15:45,930 - __main__ - INFO - Running command: bgpq4 -S AFRINIC -A -J -E -l WIOCC-ROUTES/route-set1 AS37439 -R 24 -M protocol bgp
+2025-07-30 10:15:46,965 - __main__ - INFO -   Generating policy: Hoop-telecoms-routes for AS12345
+2025-07-30 10:15:46,967 - __main__ - INFO - Running command: bgpq4 -S AFRINIC -A -J -E -l Hoop-telecoms-routes/route-set1 AS12345 -R 24 -M protocol bgp
+2025-07-30 10:15:47,869 - __main__ - INFO -     Configuration written to: configs/generated/abv02-r01_20250730_101543.conf
+2025-07-30 10:15:47,870 - __main__ - INFO - 
+Applying configuration to abv02-r01...
+2025-07-30 10:15:47,871 - juniper_configurator - INFO - Entering configuration mode...
+2025-07-30 10:15:54,499 - juniper_configurator - INFO - Sending configuration commands...
+2025-07-30 10:16:36,550 - juniper_configurator - INFO - Running commit confirmed...
+2025-07-30 10:16:51,048 - juniper_configurator - INFO - 
+======================================================================
+2025-07-30 10:16:51,049 - juniper_configurator - INFO - CONFIGURATION APPLIED WITH COMMIT CONFIRMED 3
+2025-07-30 10:16:51,050 - juniper_configurator - INFO - ======================================================================
+2025-07-30 10:16:51,050 - juniper_configurator - INFO - 
+IMPORTANT: The configuration has been applied with a 3-minute rollback window.
+2025-07-30 10:16:51,050 - juniper_configurator - INFO - To make these changes permanent, you must run 'commit' within the next 3 minutes.
+2025-07-30 10:16:51,051 - juniper_configurator - INFO - 
+If you do not commit within this window, the configuration
+2025-07-30 10:16:51,051 - juniper_configurator - INFO - will be automatically rolled back to its previous state.
+2025-07-30 10:16:51,051 - juniper_configurator - INFO - ----------------------------------------------------------------------
+
+2025-07-30 10:16:51,052 - __main__ - WARNING - 
+********************************************************************************
+WARNING: Configuration applied with commit confirmed 3 minutes.
+The device abv02-r01 will automatically roll back in 3 minutes
+if no commit is received. To make the changes permanent, run:
+  python scripts/bgpq4_netmiko.py --commit 154.66.247.33
+********************************************************************************
+
+2025-07-30 10:16:51,053 - __main__ - INFO - 
+Configuration application summary:
+2025-07-30 10:16:51,053 - __main__ - INFO -   - Total policies: 1
+2025-07-30 10:16:51,053 - __main__ - INFO -   - Successfully applied: 1
+2025-07-30 10:16:51,054 - __main__ - INFO -   - Failed: 0
+2025-07-30 10:16:51,054 - __main__ - INFO - 
+IMPORTANT: Remember to commit the changes within the rollback window
+2025-07-30 10:16:51,054 - __main__ - INFO - to make them permanent. Use '--commit <router_ip>' to commit.
+2025-07-30 10:22:24,771 - __main__ - INFO - Using configuration file: configs/prefix_policies.yaml
+2025-07-30 10:22:24,772 - __main__ - INFO - Processing router: abv02-r01 (154.66.247.33)
+2025-07-30 10:22:24,772 - juniper_configurator - INFO - Connecting to 154.66.247.33...
+2025-07-30 10:22:25,010 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_7.5)
+2025-07-30 10:22:25,915 - paramiko.transport - INFO - Auth banner: b'\nUNAUTHORISED ACCESS IS STRICTLY PROHIBITED AND WILL BE PROSECUTED BY LAW. \n\nWIOCC Telecom Network Operations Centre \nPhone:  +44 (0)7712 881 590, Email: noc@wiocc.com \n\n'
+2025-07-30 10:22:25,916 - paramiko.transport - INFO - Authentication (password) successful!
+2025-07-30 10:22:27,290 - juniper_configurator - INFO - Successfully connected to 154.66.247.33
+2025-07-30 10:22:27,290 - __main__ - INFO -   Generating policy: WIOCC-ROUTES for AS37439
+2025-07-30 10:22:27,291 - __main__ - INFO - Running command: bgpq4 -S AFRINIC -A -J -E -l WIOCC-ROUTES/route-set1 AS37439 -R 24 -M protocol bgp
+2025-07-30 10:22:28,304 - __main__ - INFO -   Generating policy: RSAWEB_routes for AS37053:AS-37053
+2025-07-30 10:22:28,304 - __main__ - INFO - Running command: bgpq4 -S AFRINIC -A -J -E -l RSAWEB_routes/route-set1 AS37053:AS-37053 -R 24 -M protocol bgp
+2025-07-30 10:22:29,223 - __main__ - INFO -     Configuration written to: configs/generated/abv02-r01_20250730_102224.conf
+2025-07-30 10:22:29,224 - __main__ - INFO - 
+Applying configuration to abv02-r01...
+2025-07-30 10:22:29,224 - juniper_configurator - INFO - Entering configuration mode...
+2025-07-30 10:22:35,847 - juniper_configurator - INFO - Sending configuration commands...
+2025-07-30 10:25:36,663 - juniper_configurator - INFO - Running commit confirmed...
+2025-07-30 10:25:51,162 - juniper_configurator - INFO - 
+======================================================================
+2025-07-30 10:25:51,162 - juniper_configurator - INFO - CONFIGURATION APPLIED WITH COMMIT CONFIRMED 3
+2025-07-30 10:25:51,162 - juniper_configurator - INFO - ======================================================================
+2025-07-30 10:25:51,162 - juniper_configurator - INFO - 
+IMPORTANT: The configuration has been applied with a 3-minute rollback window.
+2025-07-30 10:25:51,163 - juniper_configurator - INFO - To make these changes permanent, you must run 'commit' within the next 3 minutes.
+2025-07-30 10:25:51,163 - juniper_configurator - INFO - 
+If you do not commit within this window, the configuration
+2025-07-30 10:25:51,163 - juniper_configurator - INFO - will be automatically rolled back to its previous state.
+2025-07-30 10:25:51,163 - juniper_configurator - INFO - ----------------------------------------------------------------------
+
+2025-07-30 10:25:51,163 - __main__ - WARNING - 
+********************************************************************************
+WARNING: Configuration applied with commit confirmed 3 minutes.
+The device abv02-r01 will automatically roll back in 3 minutes
+if no commit is received. To make the changes permanent, run:
+  python scripts/bgpq4_netmiko.py --commit 154.66.247.33
+********************************************************************************
+
+2025-07-30 10:25:51,164 - __main__ - INFO - 
+Configuration application summary:
+2025-07-30 10:25:51,164 - __main__ - INFO -   - Total policies: 1
+2025-07-30 10:25:51,164 - __main__ - INFO -   - Successfully applied: 1
+2025-07-30 10:25:51,164 - __main__ - INFO -   - Failed: 0
+2025-07-30 10:25:51,165 - __main__ - INFO - 
+IMPORTANT: Remember to commit the changes within the rollback window
+2025-07-30 10:25:51,165 - __main__ - INFO - to make them permanent. Use '--commit <router_ip>' to commit.
+2025-07-30 12:40:27,544 - __main__ - INFO - Using configuration file: configs/prefix_policies.yaml
+2025-07-30 12:40:27,545 - __main__ - INFO - Processing router: abv02-r01 (154.66.247.33)
+2025-07-30 12:40:27,546 - juniper_configurator - INFO - Connecting to 154.66.247.33...
+2025-07-30 12:40:27,782 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_7.5)
+2025-07-30 12:40:28,710 - paramiko.transport - INFO - Auth banner: b'\nUNAUTHORISED ACCESS IS STRICTLY PROHIBITED AND WILL BE PROSECUTED BY LAW. \n\nWIOCC Telecom Network Operations Centre \nPhone:  +44 (0)7712 881 590, Email: noc@wiocc.com \n\n'
+2025-07-30 12:40:28,712 - paramiko.transport - INFO - Authentication (password) successful!
+2025-07-30 12:40:30,098 - juniper_configurator - INFO - Successfully connected to 154.66.247.33
+2025-07-30 12:40:30,099 - __main__ - INFO -   Generating policy: WIOCC-ROUTES for AS37439
+2025-07-30 12:40:30,100 - __main__ - INFO - Running command: bgpq4 -S AFRINIC -A -J -E -l WIOCC-ROUTES/route-set1 AS37439 -R 24 -M protocol bgp
+2025-07-30 12:40:31,213 - __main__ - INFO -   Generating policy: RSAWEB_routes for AS37053:AS-37053
+2025-07-30 12:40:31,214 - __main__ - INFO - Running command: bgpq4 -S AFRINIC -A -J -E -l RSAWEB_routes/route-set1 AS37053:AS-37053 -R 24 -M protocol bgp
+2025-07-30 12:40:32,142 - __main__ - INFO -     Configuration written to: configs/generated/abv02-r01_20250730_124027.conf
+2025-07-30 12:40:32,142 - __main__ - INFO - 
+Applying configuration to abv02-r01...
+2025-07-30 12:40:32,143 - juniper_configurator - INFO - Entering configuration mode...
+2025-07-30 12:40:38,767 - juniper_configurator - INFO - Sending configuration commands...
+2025-07-30 12:43:39,603 - juniper_configurator - INFO - Running commit confirmed...
+2025-07-30 12:43:54,103 - juniper_configurator - INFO - 
+======================================================================
+2025-07-30 12:43:54,103 - juniper_configurator - INFO - CONFIGURATION APPLIED WITH COMMIT CONFIRMED 3
+2025-07-30 12:43:54,104 - juniper_configurator - INFO - ======================================================================
+2025-07-30 12:43:54,104 - juniper_configurator - INFO - 
+IMPORTANT: The configuration has been applied with a 3-minute rollback window.
+2025-07-30 12:43:54,104 - juniper_configurator - INFO - To make these changes permanent, you must run 'commit' within the next 3 minutes.
+2025-07-30 12:43:54,104 - juniper_configurator - INFO - 
+If you do not commit within this window, the configuration
+2025-07-30 12:43:54,104 - juniper_configurator - INFO - will be automatically rolled back to its previous state.
+2025-07-30 12:43:54,105 - juniper_configurator - INFO - ----------------------------------------------------------------------
+
+2025-07-30 12:43:54,105 - __main__ - WARNING - 
+********************************************************************************
+WARNING: Configuration applied with commit confirmed 3 minutes.
+The device abv02-r01 will automatically roll back in 3 minutes
+if no commit is received. To make the changes permanent, run:
+  python scripts/bgpq4_netmiko.py --commit 154.66.247.33
+********************************************************************************
+
+2025-07-30 12:43:54,106 - __main__ - INFO - 
+Configuration application summary:
+2025-07-30 12:43:54,106 - __main__ - INFO -   - Total policies: 1
+2025-07-30 12:43:54,106 - __main__ - INFO -   - Successfully applied: 1
+2025-07-30 12:43:54,106 - __main__ - INFO -   - Failed: 0
+2025-07-30 12:43:54,106 - __main__ - INFO - 
+IMPORTANT: Remember to commit the changes within the rollback window
+2025-07-30 12:43:54,107 - __main__ - INFO - to make them permanent. Use '--commit <router_ip>' to commit.
+2025-07-30 12:53:03,123 - __main__ - INFO - Using configuration file: configs/prefix_policies.yaml
+2025-07-30 12:53:03,124 - __main__ - INFO - Processing router: abv02-r01 (154.66.247.33)
+2025-07-30 12:53:03,124 - juniper_configurator - INFO - Connecting to 154.66.247.33...
+2025-07-30 12:53:03,362 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_7.5)
+2025-07-30 12:53:04,288 - paramiko.transport - INFO - Auth banner: b'\nUNAUTHORISED ACCESS IS STRICTLY PROHIBITED AND WILL BE PROSECUTED BY LAW. \n\nWIOCC Telecom Network Operations Centre \nPhone:  +44 (0)7712 881 590, Email: noc@wiocc.com \n\n'
+2025-07-30 12:53:04,289 - paramiko.transport - INFO - Authentication (password) successful!
+2025-07-30 12:53:05,670 - juniper_configurator - INFO - Successfully connected to 154.66.247.33
+2025-07-30 12:53:05,670 - __main__ - INFO -   Generating policy: WIOCC-ROUTES for AS37439
+2025-07-30 12:53:05,670 - __main__ - INFO - Running command: bgpq4 -S AFRINIC -A -J -E -l WIOCC-ROUTES/route-set1 AS37439 -R 24 -M protocol bgp
+2025-07-30 12:53:06,842 - __main__ - INFO -   Generating policy: RSAWEB_routes for AS37053:AS-37053
+2025-07-30 12:53:06,844 - __main__ - INFO - Running command: bgpq4 -S AFRINIC -A -J -E -l RSAWEB_routes/route-set1 AS37053:AS-37053 -R 24 -M protocol bgp
+2025-07-30 12:53:08,008 - __main__ - INFO -     Configuration written to: configs/generated/abv02-r01_20250730_125303.conf
+2025-07-30 12:53:08,010 - __main__ - INFO - 
+Applying configuration to abv02-r01...
+2025-07-30 12:53:08,011 - juniper_configurator - INFO - Entering configuration mode...
+2025-07-30 12:53:14,635 - juniper_configurator - INFO - Sending configuration commands...
+2025-07-30 12:56:15,405 - juniper_configurator - INFO - Running commit confirmed...
+2025-07-30 12:56:29,927 - juniper_configurator - INFO - 
+======================================================================
+2025-07-30 12:56:29,928 - juniper_configurator - INFO - CONFIGURATION APPLIED WITH COMMIT CONFIRMED 3
+2025-07-30 12:56:29,928 - juniper_configurator - INFO - ======================================================================
+2025-07-30 12:56:29,928 - juniper_configurator - INFO - 
+IMPORTANT: The configuration has been applied with a 3-minute rollback window.
+2025-07-30 12:56:29,928 - juniper_configurator - INFO - To make these changes permanent, you must run 'commit' within the next 3 minutes.
+2025-07-30 12:56:29,929 - juniper_configurator - INFO - 
+If you do not commit within this window, the configuration
+2025-07-30 12:56:29,929 - juniper_configurator - INFO - will be automatically rolled back to its previous state.
+2025-07-30 12:56:29,929 - juniper_configurator - INFO - ----------------------------------------------------------------------
+
+2025-07-30 12:56:29,929 - __main__ - WARNING - 
+********************************************************************************
+WARNING: Configuration applied with commit confirmed 3 minutes.
+The device abv02-r01 will automatically roll back in 3 minutes
+if no commit is received. To make the changes permanent, run:
+  python scripts/bgpq4_netmiko.py --commit 154.66.247.33
+********************************************************************************
+
+2025-07-30 12:56:29,930 - __main__ - INFO - 
+Configuration application summary:
+2025-07-30 12:56:29,930 - __main__ - INFO -   - Total policies: 1
+2025-07-30 12:56:29,930 - __main__ - INFO -   - Successfully applied: 1
+2025-07-30 12:56:29,931 - __main__ - INFO -   - Failed: 0
+2025-07-30 12:56:29,931 - __main__ - INFO - 
+IMPORTANT: Remember to commit the changes within the rollback window
+2025-07-30 12:56:29,931 - __main__ - INFO - to make them permanent. Use '--commit <router_ip>' to commit.

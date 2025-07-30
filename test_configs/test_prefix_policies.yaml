@@ -1,0 +1,12 @@
+global:
+  default_max_prefix_length: 24
+  default_rir: AFRINIC
+routers:
+- hostname: test-router1
+  ip: 192.0.2.1
+  policies:
+  - as_set: AS-TEST1
+    max_prefix_length: 24
+    name: TEST-POLICY-1
+    rir: AFRINIC
+  username: testuser
