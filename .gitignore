@@ -57,3 +57,6 @@ htmlcov/
 ehthumbs.db
 Thumbs.db
 
+# bgpq4 cache
+.bgpq4_cache/
+
