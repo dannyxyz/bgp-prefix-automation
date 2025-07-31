@@ -17,6 +17,7 @@ import time
 import subprocess
 import logging
 import argparse
+import hashlib
 from pathlib import Path
 from datetime import datetime
 from getpass import getpass
@@ -55,6 +56,11 @@ class BGPQ4Generator:
         self.output_dir = Path(__file__).parent.parent / 'configs' / 'generated'
         self.output_dir.mkdir(parents=True, exist_ok=True)
         self.logger = logging.getLogger(__name__)
+        
+        # Initialize cache
+        self.cache_dir = Path(__file__).parent.parent / '.bgpq4_cache'
+        self.cache_dir.mkdir(exist_ok=True)
+        self.cache_ttl = 86400  # 24 hours in seconds
     
     def _load_config(self):
         """Load and validate the YAML configuration."""
@@ -69,18 +75,71 @@ class BGPQ4Generator:
             return config
             
         except yaml.YAMLError as e:
-            logger.error(f"Error parsing YAML config: {e}")
+            self.logger.error(f"Error parsing YAML config: {e}")
             sys.exit(1)
         except Exception as e:
-            logger.error(f"Error loading config: {e}")
+            self.logger.error(f"Error loading config: {e}")
             sys.exit(1)
     
+    def _get_cache_key(self, as_set, policy_name, rir, max_length):
+        """Generate a cache key for the given parameters."""
+        key_str = f"{as_set}:{policy_name}:{rir}:{max_length}"
+        return hashlib.md5(key_str.encode()).hexdigest()
+
+    def _get_cached_result(self, cache_key):
+        """Get cached result if it exists and is not expired."""
+        cache_file = self.cache_dir / f"{cache_key}.json"
+        
+        if not cache_file.exists():
+            return None
+            
+        try:
+            # Check if cache is expired
+            cache_age = time.time() - cache_file.stat().st_mtime
+            if cache_age > self.cache_ttl:
+                self.logger.debug(f"Cache expired for {cache_key}")
+                return None
+                
+            # Load and return cached result
+            with open(cache_file, 'r') as f:
+                data = json.load(f)
+                self.logger.debug(f"Cache hit for {cache_key}")
+                return data.get('result')
+                
+        except (json.JSONDecodeError, IOError) as e:
+            self.logger.warning(f"Error reading cache file {cache_file}: {e}")
+            return None
+
+    def _save_to_cache(self, cache_key, result):
+        """Save result to cache."""
+        cache_file = self.cache_dir / f"{cache_key}.json"
+        
+        try:
+            with open(cache_file, 'w') as f:
+                json.dump({
+                    'result': result,
+                    'timestamp': time.time()
+                }, f)
+            self.logger.debug(f"Saved to cache: {cache_key}")
+        except IOError as e:
+            self.logger.warning(f"Failed to save to cache: {e}")
+
     def run_bgpq4(self, as_set, policy_name, rir, max_length):
-        """Run bgpq4 command and return the output."""
+        """Run bgpq4 command and return the output with caching support."""
         # Format the policy name with route-set if it doesn't already include it
         if not any(prefix in policy_name.lower() for prefix in ['route-set', 'as-set']):
             policy_name = f"{policy_name}/route-set1"
             
+        # Generate cache key
+        cache_key = self._get_cache_key(as_set, policy_name, rir, max_length)
+        
+        # Try to get cached result
+        cached_result = self._get_cached_result(cache_key)
+        if cached_result is not None:
+            self.logger.info(f"Using cached bgpq4 result for {as_set}")
+            return cached_result
+            
+        # If not in cache, run the command
         cmd = [
             'bgpq4',
             '-S', rir,
@@ -94,7 +153,7 @@ class BGPQ4Generator:
         ]
         
         try:
-            logger.info(f"Running command: {' '.join(cmd)}")
+            self.logger.info(f"Running command: {' '.join(cmd)}")
             result = subprocess.run(
                 cmd,
                 stdout=subprocess.PIPE,
@@ -102,13 +161,18 @@ class BGPQ4Generator:
                 universal_newlines=True,
                 check=True
             )
+            
+            # Save to cache if successful
+            if result.returncode == 0 and result.stdout:
+                self._save_to_cache(cache_key, result.stdout)
+                
             return result.stdout
             
         except subprocess.CalledProcessError as e:
-            logger.error(f"bgpq4 command failed: {e.stderr}")
+            self.logger.error(f"bgpq4 command failed: {e.stderr}")
             return None
         except FileNotFoundError:
-            logger.error("bgpq4 command not found. Please install bgpq4.")
+            self.logger.error("bgpq4 command not found. Please install bgpq4.")
             sys.exit(1)
     
     def convert_to_juniper_set(self, bgpq4_output, policy_name):
@@ -137,14 +201,13 @@ class BGPQ4Generator:
     
     def _get_router_credentials(self, router_config):
         """Get router credentials from config or environment variables."""
-        import os
         return {
             'username': router_config.get('username') or os.environ.get('USERNAME'),
             'password': router_config.get('password') or os.environ.get('PASSWORD'),
             'port': router_config.get('port', 22)
         }
 
-    def generate_configs(self, apply_config=False, commit_confirmed_minutes=10):
+    def generate_configs(self, apply_config=False, commit_confirmed_minutes=3):
         """Generate configurations for all routers and policies.
         
         Args:
@@ -249,8 +312,6 @@ class BGPQ4Generator:
                     }
                     
                     if success and manual_commit_required:
-                        # IMPORTANT: Do not disconnect the device here to allow the rollback to occur
-                        # The device will automatically roll back after the specified minutes
                         self.logger.warning(
                             f"\n{'*'*80}\n"
                             f"WARNING: Configuration applied with commit confirmed {commit_confirmed_minutes} minutes.\n"
@@ -264,7 +325,6 @@ class BGPQ4Generator:
                     results.append(result)
                     
                     if success and manual_commit_required:
-                        # The success message is already logged by send_config_commands
                         pass
                     elif success:
                         self.logger.info("Configuration applied successfully")
@@ -402,21 +462,19 @@ def main():
                 logger.info(f"Successfully committed changes on {args.commit}")
             else:
                 logger.error(f"Failed to commit changes on {args.commit}: {output}")
+                sys.exit(1)
     else:
         # Generate and optionally apply configurations
-        logger.info(f"Using configuration file: {args.config}")
         results = generator.generate_configs(
             apply_config=args.apply,
             commit_confirmed_minutes=args.rollback_minutes
         )
         
-        if args.apply and results:
-            # Print summary of applied configurations
+        if not results:
+            logger.warning("No configurations were generated. Check your configuration file.")
+        elif args.apply:
             success_count = sum(1 for r in results if r['success'])
-            logger.info(f"\nConfiguration application summary:")
-            logger.info(f"  - Total policies: {len(results)}")
-            logger.info(f"  - Successfully applied: {success_count}")
-            logger.info(f"  - Failed: {len(results) - success_count}")
+            logger.info(f"\nConfiguration complete. Successfully applied to {success_count}/{len(results)} routers.")
             
             if success_count < len(results):
                 logger.warning("Some configurations failed to apply. Check the logs for details.")
@@ -430,4 +488,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

@@ -1,0 +1,1 @@
+{"result": "policy-options {\n policy-statement WIOCC-ROUTES {\n  term route-set1 {\nreplace:\n   from {\n    protocol bgp;\n    route-filter 154.66.192.0/22 upto /24;\n    route-filter 165.73.160.0/19 upto /24;\n    route-filter 197.157.220.0/22 upto /24;\n    route-filter 213.172.128.0/19 upto /24;\n   }\n  }\n }\n}\n", "timestamp": 1753962500.646789}
